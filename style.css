@@ -4,7 +4,8 @@
   border:0px;
   margin: 0px;
   box-sizing: border-box;
-  font-size: 14px;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -12,21 +13,26 @@
   background-color: hsl(30, 38%, 92%);
   height:100vh;
   padding: 70px 0;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  -webkit-box-shadow: 0px 1px 9px 0px rgba(50, 50, 50, 0.66);
+  -moz-box-shadow:    0px 1px 9px 0px rgba(50, 50, 50, 0.66);
+  box-shadow:         0px 1px 9px 0px rgba(50, 50, 50, 0.66);
 }
 
 .product-container {
-  border: 1px solid purple;
-  width: 700px;
-  height: 70%;
+  width: 650px;
+  height: 80%;
   margin: 0px auto;
   display: flex;
   border-radius: 20px;
+  background-color: hsl(158, 36%, 37%);
 }
 
 .product-img-container {
   height: 100%;
-  width: 350px;
-  border: 1px olid blue;
+  width: 325px;
 }
 
 img{
@@ -37,17 +43,16 @@ img{
 
 .product-detail-container {
   height: 100%;
-  width: 350px;
+  width: 325px;
   background-color: #fff;
   border-radius: 0px 20px 20px 0px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  padding: 0px 50px;
+  padding: 30px 40px;
 }
 
 .product-type {
-  font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   letter-spacing: 5px;
   color: hsl(228, 12%, 48%);
@@ -62,12 +67,45 @@ img{
 }
 
 .product-description {
-  font-family: 'Montserrat', sans-serif;
   color: hsl(228, 12%, 48%);
   line-height: 22px;
 }
 
 .product-price-container {
   display: flex;
-  
+  align-items: center;
+}
+
+.product-price {
+  font-size: 37px;
+  font-family: 'Fraunces', serif;
+  color: hsl(158, 36%, 37%);
+}
+
+.old-product-price {
+  margin-left: 15px;
+  color: hsl(228, 12%, 48%);
+  font-weight: 300;
+  text-decoration: line-through;
+}
+
+.btn {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  padding: 20px 30px;
+  border-radius: 10px;
+  background-color: hsl(158, 36%, 37%);
+  color: #fff;
+  font-size: 17px;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: hsl(158, 37%, 16%);
+}
+
+.fa-solid  {
+  margin-right: 10px;
 }
